@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	$('.photo_ins').bxSlider({              
+		minSlides: 1,
+		maxSlides: 1,
+		slideWidth:278,
+		slideMargin:5,
+		touchEnabled: true,
+		infiniteLoop: true
+	});
+  
+  $('.pre_toform').click(function(){
+            $("html, body").animate({scrollTop: $("form").offset().top-300}, 1000);
+            return false;
+        });
+
+});
